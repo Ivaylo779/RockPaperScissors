@@ -1,1 +1,3 @@
-print("hi")
+rock = "Rock"
+paper = "Paper"
+scissors = "Scissors"
