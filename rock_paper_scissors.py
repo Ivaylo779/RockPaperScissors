@@ -1,28 +1,44 @@
 import random
 
-valid_moves = ['rock', 'paper', 'scissors']
+player_score = 0
+computer_score = 0
 
-player_move = input("Choose Rock, Paper or Scissors: ").strip().lower()
+while True:
+    valid_moves = ['rock', 'paper', 'scissors']
 
-if player_move not in valid_moves:
-    raise SystemExit("Invalid move. Try again...")
+    player_move = input("Choose Rock, Paper or Scissors: ").strip().lower()
 
-computer_move = random.randint(1, 3)
+    if player_move not in valid_moves:
+        raise SystemExit("Invalid move. Try again...")
 
-if computer_move == 1:
-    computer_move = "rock"
-elif computer_move == 2:
-    computer_move = "paper"
-elif computer_move == 3:
-    computer_move = "scissors"
+    computer_move = random.randint(1, 3)
 
-if player_move == 'rock' and computer_move == 'scissors' or \
-        player_move == 'paper' and computer_move == 'rock' or \
-        player_move == 'scissors' and computer_move == 'paper':
-    print("You Won!")
+    if computer_move == 1:
+        computer_move = "rock"
+    elif computer_move == 2:
+        computer_move = "paper"
+    elif computer_move == 3:
+        computer_move = "scissors"
 
-elif player_move == computer_move:
-    print("Draw!")
+    print(f"The computer chose {computer_move}.")
 
-else:
-    print("You Lost!")
+    if player_move == 'rock' and computer_move == 'scissors' or \
+            player_move == 'paper' and computer_move == 'rock' or \
+            player_move == 'scissors' and computer_move == 'paper':
+        print("You Won!")
+        player_score += 1
+
+    elif player_move == computer_move:
+        print("Draw!")
+
+    else:
+        print("You Lost!")
+        computer_score += 1
+
+    quit_condition = input("Do you want to play again? (yes/no): ").strip().lower()
+    if quit_condition == 'no':
+        exit()
+    elif quit_condition == 'yes':
+        continue
+    else:
+        print("Invalid input. Try again.")
