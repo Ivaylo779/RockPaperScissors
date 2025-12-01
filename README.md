@@ -32,6 +32,8 @@ A simple console game "Rock Paper Scissors"
 
 **GitHub Repository**: [Source code](https://github.com/Ivaylo779/RockPaperScissors/blob/main/rock_paper_scissors.py)
 
+**Live Demo**: [Play the game here](https://replit.com/@ivaylobrezin/Rock-Paper-Scissors)
+
 ## Описание
 
 Класическа игра срещу компютъра, при която избирате между камък, хартия или ножица. Играта следи резултата и ви дава възможност да играете многократно.
