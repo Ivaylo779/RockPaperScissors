@@ -27,16 +27,29 @@ while True:
             player_move == 'scissors' and computer_move == 'paper':
         print("You Won!")
         player_score += 1
+        print("Scores:\n"
+              f"Player score: {player_score}\n"
+              f"Computer score: {computer_score}")
 
     elif player_move == computer_move:
         print("Draw!")
+        print("Scores:\n"
+              f"Player score: {player_score}\n"
+              f"Computer score: {computer_score}")
 
     else:
         print("You Lost!")
         computer_score += 1
+        print("Scores:\n"
+              f"Player score: {player_score}\n"
+              f"Computer score: {computer_score}")
 
     quit_condition = input("Do you want to play again? (yes/no): ").strip().lower()
     if quit_condition == 'no':
+        print("Final scores:\n"
+              f"Player score: {player_score}\n"
+              f"Computer score: {computer_score}")
+        print("Thank you for playing!")
         exit()
     elif quit_condition == 'yes':
         continue
