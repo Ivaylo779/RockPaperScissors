@@ -30,9 +30,7 @@ A simple console game "Rock Paper Scissors"
 
 ## 🔗 Source Code
 
-**GitHub Repository**: [Добави линка към твоето repository тук]
-
-Например: `https://github.com/yourusername/rock-paper-scissors`
+**GitHub Repository**: [Source code: ](https://github.com/Ivaylo779/RockPaperScissors/blob/main/rock_paper_scissors.py)
 
 ## 📋 Описание
 
